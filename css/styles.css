@@ -17,7 +17,7 @@ body {
     color: #434b56;
 }
 
-.ShowOnlyDesktop {
+.only-desktop {
     display: none;
 }
 
@@ -55,7 +55,30 @@ ol li {
 }
 
 @media screen and (min-width: 768px) {
-    .ShowOnlyDesktop {
+    .only-desktop {
         display: block;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex: 1 1 auto;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero-text {
+        width: 88%;
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
+    }
+
+    .ingredients,
+    .how-to-make {
+        margin: 32px;
+        padding: 32px;
     }
 }
