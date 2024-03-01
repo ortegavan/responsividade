@@ -55,14 +55,24 @@ ol li {
 }
 
 @media screen and (min-width: 768px) {
+    body {
+        background-color: #fff;
+    }
+
     .only-desktop {
         display: block;
     }
 
     .container {
-        width: 100%;
+        background-color: #f4f5f8;
+        margin: auto;
+        margin-top: 16px;
+        width: 82%;
         display: flex;
-        flex: 1 1 auto;
+    }
+
+    .container > div {
+        flex: 1;
     }
 
     .hero {
@@ -72,13 +82,7 @@ ol li {
     .hero-text {
         width: 88%;
         position: absolute;
-        bottom: 32px;
-        left: 32px;
-    }
-
-    .ingredients,
-    .how-to-make {
-        margin: 32px;
-        padding: 32px;
+        left: 16px;
+        top: 16px;
     }
 }
